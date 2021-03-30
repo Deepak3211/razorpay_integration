@@ -37,6 +37,7 @@ const data = {
 amount: amount * 100,
 currency:'INR'
 }
+  // console.log(data);
 const displayRazorpay = async () => {
   const result = await axios.post(`${process.env.REACT_APP_ROUTES}/payment/orders`, data);
 if (!result) {
@@ -54,7 +55,8 @@ name: 'Chota Don',
 description: 'Chota Don Pvt. Ltd',
 image: 'https://www.dailyexcelsior.com/wp-content/uploads/2013/12/url.jpg',
 order_id: order_id,
-handler: async (response) => {
+  handler: async (response) => {
+  // console.log(response)
 const data = {
 orderCreationId: order_id,
 razorpayPaymentId: response.razorpay_payment_id,

@@ -30,6 +30,7 @@ router.post('/orders', async (req, res) => {
 });
 
 router.post("/success", async (req, res) => {
+  // console.log(req.body);
     try {
         // getting the details back from our font-end
         const {

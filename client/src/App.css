@@ -39,3 +39,15 @@
   cursor: pointer;
   
 }
+
+@media screen and (max-width: 600px) {
+  .inputField,.btn {
+    width: 290px;
+    /* margin: 20px; */
+    /* overflow: hidden; */
+    text-align: center;
+
+  }
+
+
+}
