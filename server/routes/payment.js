@@ -33,7 +33,7 @@ router.post("/success", async (req, res) => {
   // console.log(req.body);
     try {
         // getting the details back from our font-end
-        const {
+        const {amount,
             orderCreationId,
             razorpayPaymentId,
             razorpayOrderId,
@@ -58,7 +58,7 @@ router.post("/success", async (req, res) => {
         // YOU CAN SAVE THE DETAILS IN YOUR DATABASE IF YOU WANT
 
         res.json({
-            msg: "success 😃",
+            msg: `Your payment of ₹${amount/100} is successfully completed 😃 `,
             orderId: razorpayOrderId,
             paymentId: razorpayPaymentId,
         });

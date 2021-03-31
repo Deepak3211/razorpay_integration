@@ -57,7 +57,8 @@ image: 'https://www.dailyexcelsior.com/wp-content/uploads/2013/12/url.jpg',
 order_id: order_id,
   handler: async (response) => {
   // console.log(response)
-const data = {
+    const data = {
+amount: amount ,
 orderCreationId: order_id,
 razorpayPaymentId: response.razorpay_payment_id,
 razorpayOrderId: response.razorpay_order_id,
