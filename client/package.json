@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+   "resolutions": {
+"glob-parent": "5.1.2",
+"browserslist": "4.16.5"
+}
 }
