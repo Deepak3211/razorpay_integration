@@ -20,11 +20,11 @@ router.post('/orders', async (req, res) => {
     
     const order = await instance.orders.create(options);
     if (!order) {
-      return res.status(500).send(' Server Error')
+      return res.status(500).json(' Server Error')
     }
     res.json(order);
   } catch (error) {
-    res.status(500).send(' Server Error')
+    res.status(500).json(' Server Error')
     
   }
 });
@@ -63,7 +63,7 @@ router.post("/success", async (req, res) => {
             paymentId: razorpayPaymentId,
         });
     } catch (error) {
-      res.status(500).send(error.message);
+      res.status(500).json(error.message);
       // console.log(error);
     }
 });
