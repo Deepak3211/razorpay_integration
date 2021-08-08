@@ -63,7 +63,7 @@ router.post("/success", async (req, res) => {
             paymentId: razorpayPaymentId,
         });
     } catch (error) {
-      res.status(500).send(error);
+      res.status(500).send(error.message);
       // console.log(error);
     }
 });
